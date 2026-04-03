@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revista PDF - Newspaper Paradis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <aside id="sidePanel" class="side-panel">
+    <button id="closeNav" class="close-btn" aria-label="Close navigation">✕</button>
+    <h2>MENIU</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="events.html">Evenimente</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="reporters.html">Reporteri</a></li>
+        <li><a href="pdfs.html">Revista PDF</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div id="pageOverlay" class="overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <button id="openNav" class="hamburger" aria-label="Open navigation">☰</button>
+    <div>
+      <h1>Revista PDF</h1>
+      <p class="subtitle"><span id="todayDate"></span> | Paradis International College</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Ediții Disponibile</h2>
+      <p class="lead">Citește edițiile oficiale ale revistei Paradis direct din browser.</p>
+      
+      <div class="pdf-grid">
+        <article>
+          <h3>Ediție Martie 2026</h3>
+          <p class="pdf-meta">Ediție principală | 32 pagini</p>
+          <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" title="Ediție Martie 2026" loading="lazy"></iframe>
+          <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="pdf-download" download>Download PDF</a>
+        </article>
+
+        <article>
+          <h3>Ediție februarie 2026</h3>
+          <p class="pdf-meta">Ediție specială - Sporturi | 24 pagini</p>
+          <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" title="Ediție Februarie 2026" loading="lazy"></iframe>
+          <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="pdf-download" download>Download PDF</a>
+        </article>
+
+        <article>
+          <h3>Ediție ianuarie 2026</h3>
+          <p class="pdf-meta">Ediție specială - Noul An | 28 pagini</p>
+          <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" title="Ediție ianuarie 2026" loading="lazy"></iframe>
+          <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="pdf-download" download>Download PDF</a>
+        </article>
+
+        <article>
+          <h3>Ediție decembrie 2025</h3>
+          <p class="pdf-meta">Ediție specială - Holidays | 30 pagini</p>
+          <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" title="Ediție Decembrie 2025" loading="lazy"></iframe>
+          <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" class="pdf-download" download>Download PDF</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Despre Revista</h2>
+      <p><strong>Newspaper Paradis</strong> este publicația oficială a Paradis International College, apărând lunar pentru a aduce în fața comunității școlare gândurile, realizările și noutățile din viața școlii.</p>
+      <p>Fiecare ediție conține:</p>
+      <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+        <li><strong>Interviuri</strong> cu profesori, directoare și personaje marca</li>
+        <li><strong>Noutăți</strong> din viața școlii și realizări elevilor</li>
+        <li><strong>Articole de opinie</strong> ale membrilor comunității</li>
+        <li><strong>Fotografie</strong> și reportaje din evenimentele școlare</li>
+        <li><strong>Rubrici speciale</strong> și anunțuri importante</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Frecvență de Publicare</h2>
+      <p>Revista Paradis apare <strong>lunar</strong>, cu prime ediții în septembrie și ultimele în iunie. Fiecare ediție cuprinde știri și articole din luna precedentă.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html" style="color: inherit; text-decoration: underline;">← Înapoi la pagina principală</a></p>
+    <p>Paradis International College - ziar școlar în stil retro 20s-50s noir, alb-negru.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

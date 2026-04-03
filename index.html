@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newspaper Paradis - Paradis International College</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <aside id="sidePanel" class="side-panel">
+    <button id="closeNav" class="close-btn" aria-label="Close navigation">✕</button>
+    <h2>MENIU</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="events.html">Evenimente</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="reporters.html">Reporteri</a></li>
+        <li><a href="pdfs.html">Revista PDF</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div id="pageOverlay" class="overlay" aria-hidden="true"></div>
+
+  <header id="top" class="site-header">
+    <button id="openNav" class="hamburger" aria-label="Open navigation">☰</button>
+    <div>
+      <h1>Newspaper Paradis</h1>
+      <p class="subtitle"><span id="todayDate"></span> | Paradis International College</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="important" class="card big-card">
+      <h2>Ce s-a întâmplat cel mai important azi</h2>
+      <div class="card-grid">
+        <article class="small-card">
+          <h3>Interviuri cu profesori</h3>
+          <p>Am înregistrat perspective despre disciplina lor, metodele de predare și sfaturi pentru liceeni.</p>
+        </article>
+        <article class="small-card">
+          <h3>Interviu cu directoarea</h3>
+          <p>Direcția școlii ne-a vorbit despre proiectele anului și motivația din spatele succeselor Paradis.</p>
+        </article>
+        <article class="small-card">
+          <h3>Noutăți școlare</h3>
+          <p>Concursuri, parteneriate și evenimente care au întărit spiritul comunității.</p>
+        </article>
+        <article class="small-card">
+          <h3>Premii și recorduri</h3>
+          <p>Elevii și profesorii au obținut ocazii de podium în competiții naționale și internaționale.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="team" class="card">
+      <h2>Echipa revistei</h2>
+      <p class="lead">Proiect creat de membrii echipei de jurnaliști ai Paradis International College.</p>
+      <div class="team-grid">
+        <figure>
+          <img src="https://i.imgur.com/4Z7z6Qk.jpg" alt="Punct principal al echipei" loading="lazy" />
+          <figcaption>Andrei Popa - Redactor șef</figcaption>
+        </figure>
+        <figure>
+          <img src="https://i.imgur.com/OMzvMkh.jpg" alt="Punct secundar al echipei" loading="lazy" />
+          <figcaption>Elena Ionescu - Editor text</figcaption>
+        </figure>
+        <figure>
+          <img src="https://i.imgur.com/h3celVu.jpg" alt="Punct terțiar al echipei" loading="lazy" />
+          <figcaption>Maria Dumitru - Fotograf</figcaption>
+        </figure>
+        <figure>
+          <img src="https://i.imgur.com/pj3qfGU.jpg" alt="Punctul final al echipei" loading="lazy" />
+          <figcaption>Lucas Mihail - Layout & design</figcaption>
+        </figure>
+      </div>
+      <p class="made-by">Realizat de <strong>Echipa Paradis</strong> în data de <span id="todayDateSmall"></span></p>
+    </section>
+
+    <section id="pdfs" class="card">
+      <h2>Revista în format PDF</h2>
+      <p class="lead">Accesează și citește edițiile oficiale direct din browser.</p>
+      <div class="pdf-grid">
+        <article>
+          <h3>Ediție principală</h3>
+          <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" title="Ediție principală" loading="lazy"></iframe>
+        </article>
+        <article>
+          <h3>Ediție specială</h3>
+          <iframe src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" title="Ediție specială" loading="lazy"></iframe>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <p>Paradis International College - ziar școlar în stil retro 20s-50s noir, alb-negru.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

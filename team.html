@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Echipă - Newspaper Paradis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <aside id="sidePanel" class="side-panel">
+    <button id="closeNav" class="close-btn" aria-label="Close navigation">✕</button>
+    <h2>MENIU</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="events.html">Evenimente</a></li>
+        <li><a href="team.html">Echipă</a></li>
+        <li><a href="pdfs.html">Revista PDF</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div id="pageOverlay" class="overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <button id="openNav" class="hamburger" aria-label="Open navigation">☰</button>
+    <div>
+      <h1>Echipa Redacțională</h1>
+      <p class="subtitle"><span id="todayDate"></span> | Paradis International College</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Membrii Echipei</h2>
+      <p class="lead">Acești jurnaliști pasionați au creat revista Paradis cu dedicație și creativitate.</p>
+      
+      <div class="team-grid">
+        <figure>
+          <img src="https://i.imgur.com/4Z7z6Qk.jpg" alt="Andrei Popa" loading="lazy" />
+          <figcaption>
+            <strong>Andrei Popa</strong>
+            <span>Redactor șef</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://i.imgur.com/OMzvMkh.jpg" alt="Elena Ionescu" loading="lazy" />
+          <figcaption>
+            <strong>Elena Ionescu</strong>
+            <span>Editor text</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://i.imgur.com/h3celVu.jpg" alt="Maria Dumitru" loading="lazy" />
+          <figcaption>
+            <strong>Maria Dumitru</strong>
+            <span>Fotograf</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="https://i.imgur.com/pj3qfGU.jpg" alt="Lucas Mihail" loading="lazy" />
+          <figcaption>
+            <strong>Lucas Mihail</strong>
+            <span>Layout & Design</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Despre Echipă</h2>
+      <article class="team-bio">
+        <h3>Andrei Popa - Redactor șef</h3>
+        <p>Andrei conduce echipa cu viziune și rigurozitate. Cu peste 3 ani de experiență în jurnalism școlar, el asigură calitatea și relevanța fiecărui articol publicat în revista Paradis.</p>
+      </article>
+      <article class="team-bio">
+        <h3>Elena Ionescu - Editor text</h3>
+        <p>Elena are talent pentru cuvinte și atenție la detalii. Editează și corectează fiecare articol pentru a asigura claritate și coerență în narație.</p>
+      </article>
+      <article class="team-bio">
+        <h3>Maria Dumitru - Fotograf</h3>
+        <p>Maria captează momentele importante ale școlii prin obiectiv. Fotografiile ei transmit emoții și aduc poveștile revistei la viață.</p>
+      </article>
+      <article class="team-bio">
+        <h3>Lucas Mihail - Layout & Design</h3>
+        <p>Lucas proiectează aspectul vizual al revistei. Combinația sa de creativitate și sense estetic creează o experiență de citire captivantă în stil retro noir.</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Misiunea Noastră</h2>
+      <p>Revista Paradis este vocea elevilor și profesorilor Paradis International College. Ne propunem să documentez vieața școlii, să evidențiem realizările și să creez o comunitate informată și unită.</p>
+      <p><strong>Motto:</strong> "Adevărul prin jurnalism, comunitate prin cuvinte."</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html" style="color: inherit; text-decoration: underline;">← Înapoi la pagina principală</a></p>
+    <p>Paradis International College - ziar școlar în stil retro 20s-50s noir, alb-negru.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
