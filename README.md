@@ -1,101 +1,113 @@
-# Newspaper Paradis — Paradis International College
+<div align="center">
 
-Site-ul oficial al revistei școlare **Newspaper Paradis**, realizat de elevii
-Paradis International College. Tema vizuală: noir alb-negru, stil retro 20s–50s.
+# ✦ NEWSPAPER PARADIS ✦
+
+*Publicația oficială a elevilor de la Paradis International College*
+
+─────────────────────────────────────────
+
+![Newspaper Paradis](https://img.shields.io/badge/Paradis%20International%20College-%E2%97%86%20Revista%20elevilor-%230f0f0f?style=for-the-badge&labelColor=f7f4ee&color=111111)
+
+</div>
 
 ---
 
-## Structura proiectului
+Există ceva aparte în a ține în mână o revistă făcută de colegii tăi. Nu e tipărită la o fabrică undeva — e scrisă de oameni pe care îi știi, fotografiată în holurile pe care le parcurgi în fiecare zi, gândită la masa de redacție din curtea școlii. **Newspaper Paradis** este exact asta: vocea vie a Paradis International College, pusă pe hârtie — și acum, și pe ecran.
+
+<div align="center">
 
 ```
-/
-├── index.html             ← pagina principală
-├── events.html            ← evenimente și noutăți
-├── design.html            ← echipa de design
-├── marketing.html         ← echipa de marketing
-├── writing.html           ← echipa de redactori
-├── reporters.html         ← echipa de reporteri
-├── pdfs.html              ← arhiva edițiilor PDF
-├── contact.html           ← formular de contact
-├── team.html              ← prezentarea generală a echipei
-│
-├── assets/
-│   ├── css/
-│   │   └── style.css      ← stilul global (afectează toate paginile)
-│   ├── js/
-│   │   └── script.js      ← logica meniului și a datei
-│   ├── img/               ← fotografii (jpg, png, webp)
-│   ├── svg/               ← logo și elemente grafice vectoriale
-│   └── pdf/
-│       └── [an]/          ← ex: 2024/
-│           └── [sezon]-[an].pdf
-│
-└── .github/
-    └── agents/            ← instrucțiuni pentru agenții AI
-        ├── INSTRUCTIUNI-AGENT.md
-        └── STRUCTURA-SITE.md
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░  PARADIS INTERNATIONAL COLLEGE  1916  ░
+░        — EST. MMXVI —                 ░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ```
 
----
+</div>
 
-## Reguli de denumire (naming conventions)
-
-### Fișiere HTML
-- Litere mici, cuvinte separate prin `-` (kebab-case)
-- Exemple: `index.html`, `events.html`, `pdfs.html`
-
-### Fișiere CSS și JS
-- Litere mici, kebab-case
-- Exemple: `style.css`, `script.js`, `pdfs-extras.css`
-
-### Imagini (`assets/img/`)
-- Format: `[context]-[descriptor].[ext]`
-- Litere mici, fără spații, fără diacritice, kebab-case
-- Exemple: `echipa-andrei-popa.jpg`, `eveniment-debate-2026.jpg`, `cover-toamna-2024.webp`
-
-### SVG-uri (`assets/svg/`)
-- Format: `logo-[nume].svg` sau `icon-[nume].svg` sau `[element]-[descriptor].svg`
-- Exemple: `logo-paradis.svg`, `icon-meniu.svg`, `separator-ornamental.svg`
-
-### PDF-uri (`assets/pdf/`)
-- Structura obligatorie: `assets/pdf/[an]/[sezon]-[an].pdf`
-- Sezoane acceptate (în română, fără diacritice): `primavara`, `vara`, `toamna`, `iarna`
-- Exemple:
-  - `assets/pdf/2024/toamna-2024.pdf`
-  - `assets/pdf/2016/primavara-2016.pdf`
-  - `assets/pdf/2025/iarna-2025.pdf`
-- Ani acoperiți: 2016–2026 (≈4 ediții/an × 10 ani = ~40 ediții)
-
-### Reguli generale
-- ❌ Niciodată spații în nume de fișiere
-- ❌ Niciodată diacritice în nume de fișiere (ă, â, î, ș, ț)
-- ❌ Niciodată majuscule în nume de fișiere
-- ✅ Întotdeauna kebab-case: `cuvant-cuvant.ext`
+Site-ul pe care l-ai deschis nu este un proiect tehnic de școală. Este un ziar adevărat, cu redacție adevărată, cu oameni care muncesc în spatele lui. De la primul articol scris până la ultima imagine aranjată pe pagină — totul este făcut de elevi.
 
 ---
 
-## Cum adaugi o ediție PDF nouă
+## 📰 Un arhivă care respiră
 
-1. Copiază fișierul PDF în `assets/pdf/[an]/[sezon]-[an].pdf`
-   - Exemplu: `assets/pdf/2026/vara-2026.pdf`
-2. Deschide `pdfs.html`
-3. Adaugă un bloc `<article>` în secțiunea de ediții
-4. Actualizează tabelul din `.github/agents/STRUCTURA-SITE.md`
+Unul dintre lucrurile cele mai valoroase pe care le oferă acest site este **arhiva completă a edițiilor**, începând din 2016 și până azi. Fiecare număr al revistei — aproximativ patru pe an — este disponibil în format PDF, gata de citit direct în browser sau de descărcat.
+
+<div align="center">
+
+| 🗓 Perioadă | 📄 Ediții disponibile |
+|:-----------:|:---------------------:|
+| 2016 – 2019 | Primele numere, spiritul fondator |
+| 2020 – 2022 | Revizii, pandemie, adaptare |
+| 2023 – 2026 | Redacție extinsă, nou design |
+
+</div>
+
+E ca și cum ai deschide un sertar vechi și ai găsi toate numerele păstrate cu grijă. Numai că sertarul acesta nu se prăfuiește niciodată.
 
 ---
 
-## Cum adaugi o imagine sau un SVG
+## 🖤 O estetică aleasă cu grijă
 
-- **Fotografie** → `assets/img/[context]-[descriptor].jpg`
-- **Logo / grafică vectorială** → `assets/svg/logo-paradis.svg`
-- Referențiază în HTML cu: `src="assets/img/[nume].jpg"` sau `src="assets/svg/[nume].svg"`
+Dacă ai vizitat site-ul, primul lucru care te lovește este culoarea. Sau mai bine zis — **absența** ei. Negru de cerneală, alb de hârtie veche, gri de umbră. Paleta cromată a platformei se inspiră direct din marile ziare ale anilor '20–'50: acel noir clasic, sobru și elegant totodată.
+
+<div align="center">
+
+| 🎨 Culoare | Hex | Rol |
+|:----------:|:---:|:----|
+| ◼ Negru profund | `#0f0f0f` | Fundal principal |
+| 🟫 Hârtie veche | `#f7f4ee` | Carduri și conținut |
+| ▪ Gri discret | `#444444` | Text secundar, subtitluri |
+| ◻ Alb de tipar | `#f8f5eb` | Header și bara de navigare |
+
+</div>
+
+Fonturile completează imaginea: **Cinzel** pentru titluri — cu serife nobile, aproape inscripționale — și **Libre Baskerville** pentru textul de lectură, cald și citibil. Împreună, transmit același mesaj: *suntem serioși, dar suntem și ai voștri.*
 
 ---
 
-## Tehnologii folosite
+## 🏛️ Redacția — echipe cu identitate
 
-- HTML5 semantic
-- CSS3 (fișier unic global: `assets/css/style.css`)
-- JavaScript vanilla (fișier unic: `assets/js/script.js`)
-- Fonturi Google: Cinzel + Libre Baskerville
-- Fără framework-uri, fără npm, fără build tools — proiect simplu, direct în browser
+O revistă nu se face singură, și nici Newspaper Paradis nu face excepție. Redacția este împărțită în patru echipe distincte, fiecare cu rolul ei bine definit.
+
+<div align="center">
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                   REDACȚIA PARADIS                      │
+│                                                         │
+│  ✍ WRITING    📸 REPORTERI    🎨 DESIGN    📣 MARKETING │
+└─────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+**Echipa de Writing** este inima redacției. Ei scriu articolele, editează textele, verifică fiecare virgulă și se asigură că vocea revistei rămâne clară și coerentă. De la interviuri cu profesori și directoare, până la editoriale și rubrici de opinie — totul trece prin mâinile lor.
+
+**Reporterii** sunt cei care ies pe teren. Ei sunt la evenimentele școlii cu reportofonul și aparatul foto, adună povești, surprind momente și aduc materialul brut pe care ceilalți îl prelucrează. Fără ei, revista ar vorbi în abstract.
+
+**Echipa de Design** transformă cuvintele în pagini. Ei decid cum arată fiecare număr, ce fonturi se folosesc, cum sunt aranjate imaginile, ce culori domină coperta. Stilul retro-noir al revistei este, în mare parte, creația lor.
+
+**Echipa de Marketing** se asigură că munca tuturor ajunge la oameni. Ei gestionează prezența online a revistei, organizează lansările, distribuie edițiile și construiesc legătura dintre redacție și comunitatea școlii.
+
+---
+
+## ✨ O metaforă
+
+Dacă ar fi să descriem acest proiect printr-o singură imagine: **e o tipografie din anii '40, mutată în epoca digitală.**
+
+Miroase a cerneală și hârtie. Linotipiștii sunt acum designeri. Crainicii sunt acum reporteri cu telefoane. Directorul de tipar este acum o echipă de marketing. Și ziarul nu mai ajunge pe treptele casei dis-de-dimineață — ci apare pe ecranul tău, cu același titlu îndrăzneț, aceleași litere serife, același negru adânc.
+
+Dar sufletul e același: *oameni tineri care cred că poveștile merită spuse.*
+
+<div align="center">
+
+─────────────────────────────────────────
+
+*Newspaper Paradis · Paradis International College · Est. 2016*
+
+[![Echipa](https://img.shields.io/badge/Echip%C4%83-Elevi%20Paradis-%230f0f0f?style=flat-square&labelColor=f7f4ee)](https://paradis-college.github.io/Newspaper/)
+[![Arhivă](https://img.shields.io/badge/Arhiv%C4%83-2016%E2%80%932026-%230f0f0f?style=flat-square&labelColor=f7f4ee)](https://paradis-college.github.io/Newspaper/pdfs/)
+[![Design](https://img.shields.io/badge/Stil-Noir%20Retro%2020s%E2%80%9350s-%230f0f0f?style=flat-square&labelColor=f7f4ee)](https://paradis-college.github.io/Newspaper/design/)
+
+</div>
